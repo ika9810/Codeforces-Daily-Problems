@@ -127,7 +127,8 @@ saveline = []
 title = "### 🌟Today's Codeforces Daily Problems " + timeformat
 
 saveline.append(title + '\n')
-saveline.append("(Notes: The problems in this contest were curated based on their level of difficulty and listed from Codeforces's existing problems)\n")
+saveline.append("(Notes: The problems were curated based on their level of difficulty and listed from Codeforces's existing problems)\n")
+saveline.append("[10 Best Tips to Get Started with Codeforces](https://github.com/ika9810/Codeforces-Daily-Problems/blob/main/10%20Best%20Tips%20to%20Get%20Started%20with%20Codeforces.md)\n")
 saveline.append("\n")
 saveline.append("| # | Problem | Rate| Rating | Difficulty | Contest |\n")
 saveline.append("|---| ----- | :--------: | :----------: | :----------: | ---------- |\n")

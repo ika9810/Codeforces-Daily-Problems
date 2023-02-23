@@ -64,7 +64,7 @@ for prob in problems:
         #https://codeforces.com/contest/1790/problem/A
         rate["ProblemLink"] = rate["Contest"] + "/problem/" + rate["#"]
         #|![Rate](https://img.shields.io/badge/9%20Kyu---1438-lightgrey)|
-        rate["Rate"] = "https://img.shields.io/badge/" + str(rate["Rating"]) + "-" + str(rate["Difficulty"]) +  "-" + rate["Color"]
+        rate["Rate"] = "https://img.shields.io/badge/" + str(rate["Rating"].replace(" ","%20")) + "-" + str(rate["Difficulty"]) +  "-" + rate["Color"]
         problem_set.append(rate)
         color_ = rate["Color"]
         if color_ ==  "lightgrey":
@@ -118,7 +118,7 @@ print(today_,"here")
 #Number,index,Problem,Rate,Rating,Color,Difficulty,Link,Contest
 #|A|[ABC219_C](https://atcoder.jp/contests/abc219/tasks/abc219_c)|![Rate](https://img.shields.io/badge/9%20Kyu-227-lightgrey)|9 Kyu|227|[https://atcoder.jp/contests/abc219](https://atcoder.jp/contests/abc219)|
 #Generate Markdown by Contests
-generated_problem = []
+
 timeformat = datetime.datetime.now(pytz.timezone('Asia/Seoul'))
 timeformat = f"{timeformat.strftime('(%Y-%m-%d)')}"
 dateformat = datetime.datetime.now(pytz.timezone('Asia/Seoul'))
@@ -133,23 +133,13 @@ saveline.append("| # | Problem | Rate| Rating | Difficulty | Contest |\n")
 saveline.append("|---| ----- | :--------: | :----------: | :----------: | ---------- |\n")
 
 for pro in today_:
-
-
-
-    "|A|[AGC010_A](https://atcoder.jp/contests/agc010/tasks/agc010_a)|![Rate](https://img.shields.io/badge/9%20Kyu---1438-lightgrey)|9 Kyu|-1438|[https://atcoder.jp/contests/agc010](https://atcoder.jp/contests/agc010)|\n"
     msg = "|"+ pro["#"]+"|["+pro["Problem"]+"]("+pro["ProblemLink"]+")|![Rate]("+ str(pro["Rate"]) + ")|" + pro["Rating"] + "|" + str(pro["Difficulty"]) + "|[" + pro["Contest"] + "]("+ pro["Contest"] +")|\n"
     saveline.append(msg)
     #saveline.append("\n")
-    generated_problem.append(saveline)
 f = open('README.md')
 lines = f.readlines()
 f.close()
 with open('./README.md', 'w') as f:
-    result_line = lines[:6]
-    
-    for k in range(len(generated_problem)):
-        result_line += generated_problem[k]
-
     f.writelines(lines[:6] + saveline)
     f.close()
 with open('./archive/'+date+".md", 'w') as f:

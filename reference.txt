@@ -7,3 +7,4 @@ Python3 Requests json parsing Reference : https://twpower.github.io/124-python-r
 README Auto Push Reference : https://github.com/tony9402/baekjoon/actions/runs/4212089979/workflow
 Crontab generator : https://crontab.guru/
 UTC to KST Converter : https://savvytime.com/converter/utc-to-kst
+10 Best Tips to Get Started with Codeforces : https://www.geeksforgeeks.org/10-best-tips-to-get-started-with-codeforces/

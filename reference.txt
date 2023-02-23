@@ -1,0 +1,9 @@
+README Reference : https://github.com/haoel/leetcode
+README Hit Badge Reference : https://velog.io/@dot2__/Github-github-%ED%94%84%EB%A1%9C%ED%95%84-%EA%BE%B8%EB%AF%B8%EA%B8%B0
+Codeforces Problem List : https://codeforces.com/api/problemset.problems
+Codeforces API : https://codeforces.com/apiHelp/methods
+Python3 Sorting dictionary in List : https://twpower.github.io/124-python-requests-usage
+Python3 Requests json parsing Reference : https://twpower.github.io/124-python-requests-usages
+README Auto Push Reference : https://github.com/tony9402/baekjoon/actions/runs/4212089979/workflow
+Crontab generator : https://crontab.guru/
+UTC to KST Converter : https://savvytime.com/converter/utc-to-kst
